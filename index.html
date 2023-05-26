@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustica Cucina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css"> <!-- fontawesome -->
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/tooplate-antique-cafe.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/javascript.js"></script>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!--Tooplate 2126 Antique Cafe
+
+https://www.tooplate.com/view/2126-antique-cafe
+*
+-->
+</head>
+
+<body>
+    <!-- Intro -->
+    <div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="img/shared_pizza.jpg" alt="customers grabbing slices of shared pizza">
+        <nav id="tm-nav" class="fixed w-full">
+            <div class="tm-container mx-auto px-2 md:py-6 text-right">
+                <button class="md:hidden py-2 px-2" id="menu-toggle"><i
+                        class="fas fa-2x fa-bars tm-text-gold"></i></button>
+                <ul class="mb-3 md:mb-0 text-2xl font-normal flex justify-end flex-col md:flex-row">
+                    <li class="inline-block mb-4 mx-4"><a href="#intro" class="tm-text-gold py-1 md:py-3 px-4">Intro</a>
+                    </li>
+                    <li class="inline-block mb-4 mx-4"><a href="#menu" class="tm-text-gold py-1 md:py-3 px-4">Menu</a>
+                    </li>
+                    <li class="inline-block mb-4 mx-4"><a href="#about" class="tm-text-gold py-1 md:py-3 px-4">About</a>
+                    </li>
+                    <li class="inline-block mb-4 mx-4"><a href="#contact" class="tm-text-gold py-1 md:py-3 px-4">Contact</a></li>
+                    <li class="inline-block mb-4 mx-4"><a href="#" class="tm-text-gold py-1 md:py-3 px-4">Order Online</a></li>        
+                </ul>
+            </div>
+        </nav>
+        <div class="container mx-auto px-2 tm-intro-width">
+            <div class="sm:pb-60 sm:pt-48 py-20">
+                <div class="bg-black bg-opacity-70 p-12 mb-5 text-center rounded-xxl">
+                    <img src="img/rustica-cucina.png" style="margin: auto;" alt="rustica-cucina logo">
+                    <p class="tm-text-gold tm-text-2xl">delicious pizza available at your convenience</p>
+                </div>
+                <div class="bg-black bg-opacity-70 p-10 mb-5 rounded-xxl">
+                    <h3 class="text-white leading-8 text-sm font-semibold" style="text-align: center;">Hours</h3>
+                    <p class="text-white leading-8 text-sm font-light" style="text-align: center;">Open Wednesday - Sunday from 5PM - 9PM (Including Delivery)<br>Closed Monday and Tuesday</p>
+                </div>
+                <div class="text-center">
+                    <div class="inline-block">
+                        <a href="#menu"
+                            class="flex justify-center items-center bg-black bg-opacity-70 py-6 px-8 rounded-lg font-semibold tm-text-2xl tm-text-gold hover:text-gray-200 transition">
+                            <i class="fas fa-regular fa-pizza-slice mr-3"></i>
+                            <span>Explore our range...</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cafe Menu -->
+    <div id="menu" class="parallax-window" data-parallax="scroll" data-image-src="img/kitchen.jpg" alt="the kitchen of a pizza restuarant with a blackbook dishes and pizza boxes">
+        <div class="container mx-auto tm-container py-24 sm:py-48">
+            <div class="text-center mb-16">
+                <h2 class="bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md">Our Most
+                    Popular Pizzas</h2>
+            </div>
+            <div class="flex flex-col lg:flex-row justify-around items-center">
+                <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <a href="#" onclick="openModal('myModal1')">
+                            <img src="img/margherita.jpg" alt="margherita pizza" class="rounded-md clickable-image">
+                        </a>
+                        <!-- The modal -->
+                        <div id="myModal1" class="modal">
+                            <div class="modal-content" id="box">
+                                <!-- Modal content goes here -->
+                                <span class="close" onclick="closeModal('myModal1')">&times;</span>
+                                <div class="containers">
+                                    <div class="image-container" style="padding-right:20px">
+                                      <img src="img/margherita.jpg" alt="margherita pizza" class="modal-image rounded-md">
+                                    </div>
+                                    <div class="text-container tm-bg-brown" style="padding: 10px;">
+                                      <h3 class="modal-title text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Margherita</h3>
+                                      <ul class="modal-list text-white font-light sm:text-lg">
+                                        <li>Basil</li>
+                                        <li>Mozzarella</li>
+                                        <li>Tomato</li>
+                                      </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ml-3 sm:ml-6">
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Margherita</h3>
+                            <div class="text-white text-md sm:text-lg font-light mb-1">Small $14.50</div>
+                            <div class="text-white text-md sm:text-lg font-light">Medium $17 | GF $21.50</div>
+                            <div class="text-white text-md sm:text-lg font-light">Large $15</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <a href="#" onclick="openModal('myModal2')">
+                            <img src="img/supreme.jpg" alt="supreme pizza" class="rounded-md clickable-image">
+                        </a>
+                        <!-- The modal -->
+                        <div id="myModal2" class="modal">
+                            <div class="modal-content" id="box">
+                                <!-- Modal content goes here -->
+                                <span class="close" onclick="closeModal('myModal2')">&times;</span>
+                                <div class="containers">
+                                    <div class="image-container" style="padding-right:20px">
+                                      <img src="img/supreme.jpg" alt="supreme pizza" class="modal-image rounded-md">
+                                    </div>
+                                    <div class="text-container tm-bg-brown" style="padding: 10px; display: flex; align-items: flex-start;">
+                                        <h3 class="modal-title text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow" style="flex: 0;">Supreme</h3>
+                                        <ul class="modal-list text-white font-light sm:text-lg" style="flex: 1;">
+                                          <li>Anchovies</li>
+                                          <li>Capsicum</li>
+                                          <li>Ham</li>
+                                          <li>Hot Salami</li>
+                                        </ul>
+                                        <ul class="modal-list text-white font-light sm:text-lg" style="flex: 1;">
+                                          <li>Mozzarella</li>
+                                          <li>Mushroom</li>
+                                          <li>Olives</li>
+                                          <li>Pineapple</li>
+                                        </ul>
+                                        <ul class="modal-list text-white font-light sm:text-lg" style="flex: 1;">
+                                          <li>Prawns</li>
+                                          <li>Tomato</li>
+                                        </ul>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ml-3 sm:ml-6">
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Supreme</h3>
+                            <div class="text-white text-md sm:text-lg font-light mb-1">Small $16.50</div>
+                            <div class="text-white text-md sm:text-lg font-light">Medium $19.50 | GF $24.50</div>
+                            <div class="text-white text-md sm:text-lg font-light">Large $24</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <a href="#" onclick="openModal('myModal3')">
+                            <img src="img/aussie.jpg" alt="aussie pizza" class="rounded-md clickable-image">
+                        </a>
+                        <!-- The modal -->
+                        <div id="myModal3" class="modal">
+                            <div class="modal-content" id="box">
+                                <!-- Modal content goes here -->
+                                <span class="close" onclick="closeModal('myModal3')">&times;</span>
+                                <div class="containers">
+                                    <div class="image-container" style="padding-right:20px">
+                                      <img src="img/aussie.jpg" alt="aussie pizza" class="modal-image rounded-md">
+                                    </div>
+                                      <div class="text-container tm-bg-brown" style="padding: 10px; display: flex; align-items: flex-start;">
+                                        <h3 class="modal-title text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow" style="flex: 0;">Aussie</h3>
+                                        <ul class="modal-list text-white font-light sm:text-lg" style="flex: 1;">
+                                          <li>Bacon</li>
+                                          <li>Egg</li>
+                                          <li>Ham</li>
+                                        </ul>
+                                        <ul class="modal-list text-white font-light sm:text-lg" style="flex: 1;">
+                                          <li>Mozzarella</li>
+                                          <li>Tomato</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="ml-3 sm:ml-6">
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Aussie</h3>
+                            <div class="text-white text-md sm:text-lg font-light mb-1">Small $16</div>
+                            <div class="text-white text-md sm:text-lg font-light">Medium $18.50 | GF $23</div>
+                            <div class="text-white text-md sm:text-lg font-light">Large $22.50</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <a href="#" onclick="openModal('myModal4')">
+                            <img src="img/capricciosa.jpg" alt="capricciosa pizza" class="rounded-md clickable-image">
+                        </a>
+                        <!-- The modal -->
+                        <div id="myModal4" class="modal">
+                            <div class="modal-content" id="box">
+                                <!-- Modal content goes here -->
+                                <span class="close" onclick="closeModal('myModal4')">&times;</span>
+                                <div class="containers">
+                                    <div class="image-container" style="padding-right:20px">
+                                      <img src="img/capricciosa.jpg" alt="capricciosa pizza" class="modal-image rounded-md">
+                                    </div>
+                                    <div class="text-container tm-bg-brown" style="padding: 10px; display: flex; align-items: flex-start;">
+                                        <h3 class="modal-title text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow" style="flex: 0;">Capricciosa</h3>
+                                        <ul class="modal-list text-white font-light sm:text-lg" style="flex: 1;">
+                                          <li>Ham</li>
+                                          <li>Mozzarella</li>
+                                          <li>Mushroom</li>
+                                        </ul>
+                                        <ul class="modal-list text-white font-light sm:text-lg" style="flex: 1;">
+                                          <li>Olives</li>
+                                          <li>Tomato</li>
+                                        </ul>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ml-3 sm:ml-6">
+                            <h3 class="text-lg sm:text-xl tm-text-yellow mb-1">Capricciosa</h3>
+                            <div class="text-white text-md sm:text-lg font-light mb-1">Small $16</div>
+                            <div class="text-white text-md sm:text-lg font-light">Medium $18.50 | GF $23</div>
+                            <div class="text-white text-md sm:text-lg font-light">Large $22.50</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
+                    <div class="flex items-start justify-end mb-6 tm-menu-item-2">
+                        <div class="text-right mr-6">
+                          <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Mexicana</h3>
+                          <div class="text-white text-md sm:text-lg font-light mb-1">Small $16</div>
+                          <div class="text-white text-md sm:text-lg font-light">Medium $18.50 | GF $23</div>
+                          <div class="text-white text-md sm:text-lg font-light">Large $22.50</div>
+                        </div>
+                      
+                        <a href="#" onclick="openModal('myModal5')">
+                          <img src="img/mexicana.jpg" alt="mexicana pizza" class="rounded-md clickable-image">
+                        </a>
+                      
+                        <!-- The modal -->
+                        <div id="myModal5" class="modal">
+                          <div class="modal-content" id="box">
+                            <!-- Modal content goes here -->
+                            <span class="close" onclick="closeModal('myModal5')">&times;</span>
+                            <div class="containers">
+                              <div class="image-container" style="padding-right:20px">
+                                <img src="img/mexicana.jpg" alt="mexicana pizza" class="modal-image rounded-md">
+                              </div>
+                              <div class="text-container tm-bg-brown" style="padding: 10px; display: flex; align-items: flex-start;">
+                                <h3 class="modal-title text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow" style="flex: 0;">Mexicana</h3>
+                                <ul class="modal-list text-white font-light sm:text-lg" style="flex: 1;">
+                                  <li>Capsicum</li>
+                                  <li>Chilli</li>
+                                  <li>Hot Salami</li>
+                                </ul>
+                                <ul class="modal-list text-white font-light sm:text-lg" style="flex: 1;">
+                                  <li>Mozzarella</li>
+                                  <li>Tomato</li>
+                                </ul>
+                        </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex items-start justify-end mb-6 tm-menu-item-2">
+                        <div class="text-right mr-6">
+                          <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Hawaiian</h3>
+                          <div class="text-white text-md sm:text-lg font-light mb-1">Small $16</div>
+                          <div class="text-white text-md sm:text-lg font-light">Medium $18.50 | GF $23</div>
+                          <div class="text-white text-md sm:text-lg font-light">Large $22.50</div>
+                        </div>
+                      
+                        <a href="#" onclick="openModal('myModal6')">
+                          <img src="img/hawaiian.jpg" alt="hawaiian pizza" class="rounded-md clickable-image">
+                        </a>
+                      
+                        <!-- The modal -->
+                        <div id="myModal6" class="modal">
+                          <div class="modal-content" id="box">
+                            <!-- Modal content goes here -->
+                            <span class="close" onclick="closeModal('myModal6')">&times;</span>
+                            <div class="containers">
+                              <div class="image-container" style="padding-right:20px">
+                                <img src="img/hawaiian.jpg" alt="hawaiian pizza" class="modal-image rounded-md">
+                              </div>
+                              <div class="text-container tm-bg-brown" style="padding: 10px;">
+                                <h3 class="modal-title text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Hawaiian</h3>
+                                <ul class="modal-list text-white font-light sm:text-lg">
+                                  <li>Ham</li>
+                                  <li>Mozzarella</li>
+                                  <li>Pineapple</li>
+                                  <li>Tomato</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex items-start justify-end mb-6 tm-menu-item-2">
+                        <div class="text-right mr-6">
+                          <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Americana</h3>
+                          <div class="text-white text-md sm:text-lg font-light mb-1">Small $16</div>
+                          <div class="text-white text-md sm:text-lg font-light">Medium $18.50 | GF $23</div>
+                          <div class="text-white text-md sm:text-lg font-light">Large $22.50</div>
+                        </div>
+                      
+                        <a href="#" onclick="openModal('myModal7')">
+                          <img src="img/americana.jpg" alt="americana pizza" class="rounded-md clickable-image">
+                        </a>
+                      
+                        <!-- The modal -->
+                        <div id="myModal7" class="modal">
+                          <div class="modal-content" id="box">
+                            <!-- Modal content goes here -->
+                            <span class="close" onclick="closeModal('myModal7')">&times;</span>
+                            <div class="containers">
+                              <div class="image-container" style="padding-right:20px">
+                                <img src="img/americana.jpg" alt="americana pizza" class="modal-image rounded-md">
+                              </div>
+                              <div class="text-container tm-bg-brown" style="padding: 10px;">
+                                <h3 class="modal-title text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Americana</h3>
+                                <ul class="modal-list text-white font-light sm:text-lg">
+                                  <li>Hot Salami</li>
+                                  <li>Mozzarella</li>
+                                  <li>Onion</li>
+                                  <li>Tomato</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex items-start justify-end mb-6 tm-menu-item-2">
+                        <div class="text-right mr-6">
+                          <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Garlic - With Cheese</h3>
+                          <div class="text-white text-md sm:text-lg font-light mb-1">Small $11.50</div>
+                          <div class="text-white text-md sm:text-lg font-light">Medium $14.50 | GF $17.50</div>
+                          <div class="text-white text-md sm:text-lg font-light">Large $16.50</div>
+                        </div>
+                      
+                        <a href="#" onclick="openModal('myModal8')">
+                          <img src="img/garlic.jpg" alt="garlic pizza with cheese" class="rounded-md clickable-image">
+                        </a>
+                      
+                        <!-- The modal -->
+                        <div id="myModal8" class="modal">
+                          <div class="modal-content" id="box">
+                            <!-- Modal content goes here -->
+                            <span class="close" onclick="closeModal('myModal8')">&times;</span>
+                            <div class="containers">
+                              <div class="image-container" style="padding-right:20px">
+                                <img src="img/garlic.jpg" alt="garlic pizza with cheese" class="modal-image rounded-md">
+                              </div>
+                              <div class="text-container tm-bg-brown" style="padding: 10px;">
+                                <h3 class="modal-title text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Garlic - With Cheese</h3>
+                                <ul class="modal-list text-white font-light sm:text-lg">
+                                  <li>Cheese</li>
+                                  <li>Garlic</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="parallax-window" data-parallax="scroll" data-image-src="img/pizza.jpg" alt="slice of pizza on a plate">
+        <div class="container mx-auto tm-container py-24 sm:py-48">
+            <div class="tm-item-container sm:ml-auto sm:mr-12 mx-auto sm:px-0 px-4">
+                <div class="bg-white bg-opacity-80 p-12 pb-14 rounded-xl mb-5">
+                    <h2 class="mb-6 tm-text-green text-4xl font-medium">About Rustica Cucina</h2>
+                    <div class="flex">
+                        <div>
+                            <p class="mb-6 text-base leading-8">
+                                Located in the heart of Beaumaris, we are a family-operated business and strongly believe in providing only the best quality dishes to our customers.
+                            </p>
+                            <img src="img/quote.png" height="50px" width="50px" alt="quote icon signalling a following quote">
+                            <p class="text-base leading-8">
+                                We make good, wholesome & strictly authentic Italian food<br><strong>&emsp;|</strong>&emsp;Joe, Owner of Rustica Cucina<br><br>So next time you’re in a mood for a real Italian feast, come in or simply order online, and enjoy!
+                            </p>
+                        </div>
+                        <div class="mr-6">
+                            <img src="img/pizza-maker.jpg" class="rounded-xl" height="100px" style="max-width: 320px; padding-left: 20px;" alt="owner of rustica-cucina making a pizza">
+                        </div>
+                    </div>
+                </div>
+                <a href="#contact"
+                    class="inline-block tm-bg-green transition text-white text-xl pt-3 pb-4 px-8 rounded-md">
+                    <i class="far fa-comments mr-4"></i>
+                    Contact
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="parallax-window relative" data-parallax="scroll"
+        data-image-src="img/bokeh.jpg" alt="blurred background with lights">
+        <div class="container mx-auto tm-container pt-24 pb-48 sm:py-48">
+            <div class="flex flex-col lg:flex-row justify-around items-center lg:items-stretch">
+                <div class="flex-1 rounded-xl px-10 py-12 m-5 bg-white bg-opacity-80 tm-item-container">
+                    <h2 class="text-3xl mb-6 tm-text-green">Contact Us</h2>
+                    <p class="mb-6 text-lg leading-8">
+                        To book a table please give us a call. Alternatively, should you require any information, do not hesitate to write an email or use the contact form to the right!
+                    </p>
+                    <p class="mb-10 text-lg">
+                        <span class="block mb-2">
+                            <img src="img/phone.png" style="display: inline-block;" alt="phone icon represening a phone number">
+                            <a href="#" class="hover:text-yellow-600 transition" style="display: inline-block; vertical-align: middle;">(03) 9589 5645</a>
+                        </span>
+                        <span class="block mb-2">
+                            <img src="img/email.png" style="display: inline-block;" height="50px" width="50px" alt="email icon represening an email">
+                            <a href="#" class="hover:text-yellow-600 transition" style="display: inline-block; vertical-align: middle;">contact@rusticucina.com.au</a>
+                        </span>
+                    </p>
+                    <div class="text-center">
+                        <a href="https://www.google.com/maps/place/Rustica+Cucina/@-37.9791022,145.043413,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad66e79b1df7649:0xb2f799eac8d1c593!8m2!3d-37.9791022!4d145.0459879!16s%2Fg%2F1tf7xw3h?entry=ttu"
+                            class="inline-block text-white text-2xl pl-10 pr-12 py-6 rounded-lg transition tm-bg-green" target="_blank">
+                            <i class="fas fa-map-marked-alt mr-8"></i>
+                            Open Maps
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1 rounded-xl p-12 pb-14 m-5 bg-black bg-opacity-50 tm-item-container">
+                    <form action="" method="POST" class="text-lg">
+                        <input type="text" name="name"
+                            class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold"
+                            placeholder="Name" required="" />
+                        <input type="email" name="email"
+                            class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold"
+                            placeholder="Email" required="" />
+                        <textarea rows="6" name="message"
+                            class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold"
+                            placeholder="Message..." required=""></textarea>
+                        <div class="text-right">
+                            <button type="submit" class="text-white hover:text-yellow-500 transition">Send it</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer class="absolute bottom-0 left-0 w-full">
+                <div
+                    class="text-white container mx-auto tm-container p-8 text-lg flex flex-col md:flex-row justify-between">
+                    <span>&copy 2023 Rustica Cucina. All rights reserved.</span>
+                    <span class="mt-5 md:mt-0">Design: <a href="https://www.tooplate.com"
+                            target="_parent">Tooplate</a></span>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script>
+
+        function checkAndShowHideMenu() {
+            if (window.innerWidth < 768) {
+                $('#tm-nav ul').addClass('hidden');
+            } else {
+                $('#tm-nav ul').removeClass('hidden');
+            }
+        }
+
+        $(function () {
+            var tmNav = $('#tm-nav');
+            tmNav.singlePageNav();
+
+            checkAndShowHideMenu();
+            window.addEventListener('resize', checkAndShowHideMenu);
+
+            $('#menu-toggle').click(function () {
+                $('#tm-nav ul').toggleClass('hidden');
+            });
+
+            $('#tm-nav ul li').click(function () {
+                if (window.innerWidth < 768) {
+                    $('#tm-nav ul').addClass('hidden');
+                }
+            });
+
+            $(document).scroll(function () {
+                var distanceFromTop = $(document).scrollTop();
+
+                if (distanceFromTop > 100) {
+                    tmNav.addClass('scroll');
+                } else {
+                    tmNav.removeClass('scroll');
+                }
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
